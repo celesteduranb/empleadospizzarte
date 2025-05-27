@@ -1,0 +1,42 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Empleados</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <main>
+    <section id="login-section">
+      <h2>Iniciar sesión</h2>
+      <form id="login-form">
+        <input type="text" id="username" placeholder="Usuario" required><br>
+        <input type="password" id="password" placeholder="Contraseña" required><br>
+        <button type="submit">Entrar</button>
+      </form>
+    </section>
+
+    <section id="dashboard" style="display:none;">
+    <h2>Pedidos</h2>
+
+    <label for="filtro-estado">Filtrar por estado:</label>
+    <select id="filtro-estado">
+        <option value="">Todos</option>
+        <option value="pendiente">Pendiente</option>
+        <option value="atendido">Atendido</option>
+    </select>
+
+
+    <label for="filtro-cliente">Cliente:</label>
+    <input type="text" id="filtro-cliente" placeholder="Buscar por nombre...">
+
+    <div id="pedidos"></div>
+    <button onclick="cerrarSesion()">Cerrar sesión</button>
+    </section>
+
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>

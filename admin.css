@@ -1,0 +1,175 @@
+/* admin.css */
+body {
+  font-family: 'Biennales', sans-serif;
+  background-color: #fff9f4;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+}
+
+h2 {
+  color: #EB7804;
+  margin-bottom: 20px;
+}
+
+form#login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+form#login-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form#login-form button {
+  background-color: #EB7804;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+form#login-form button:hover {
+  background-color: #cf6800;
+}
+
+#dashboard label,
+#dashboard select,
+#dashboard input {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+#dashboard input[type="text"] {
+  padding: 8px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#dashboard select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#pedidos > div {
+  background-color: #fdf1e5;
+  border: 1px solid #eb7804;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#pedidos strong {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 1.05rem;
+}
+
+.pedido-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pedido-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+#pedidos ul {
+  margin-top: 8px;
+  padding-left: 18px;
+}
+
+#pedidos li {
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+}
+
+#pedidos button {
+  background-color: #EB7804;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#pedidos button:hover {
+  background-color: #cf6800;
+}
+
+#dashboard button {
+  margin-top: 20px;
+  background-color: #EB7804;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#dashboard button:hover {
+  background-color: #cf6800;
+}
+
+button {
+  font-family: 'Biennales', sans-serif;
+}
+
+/* 📱 Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+  main {
+    width: 95%;
+    padding: 10px;
+  }
+
+  form#login-form,
+  #dashboard {
+    padding: 10px;
+  }
+
+  #pedidos > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #dashboard select,
+  #dashboard input[type="text"] {
+    width: 100%;
+  }
+
+  #pedidos button {
+    align-self: flex-end;
+  }
+}
